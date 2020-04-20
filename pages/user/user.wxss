@@ -1,0 +1,39 @@
+.wrapper {
+  margin: 10px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: white;
+}
+.settings {
+  color: #323233;
+  height: 100px;
+}
+.scores {
+  color: #323233;
+  height: 100px;
+  border: 1px solid red;
+  width: 94%;
+  margin-left: 3%;
+  height: 160rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  /* position: absolute; */
+  /* margin-top: -50rpx; */
+  display: table;
+}
+.scores .center-cell {
+  width: 25%;
+  height: 160rpx;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.orders {
+}
+.font-bold {
+  font-weight: 700;
+}
+.common-func {
+}
+.more-tools {
+}
