@@ -1,0 +1,66 @@
+<scroll-view style="background-color:#ebedf0; height:1000px;">
+    <van-row custom-class="wrapper settings">
+        <van-col span="4">
+            <van-image round width="50px" height="50px" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+        </van-col>
+        <van-col span="4">用户名 普通会员</van-col>
+        <van-col span="4" offset="12">
+            <van-icon name="setting-o" size="25px" />
+        </van-col>
+    </van-row>
+    <view class="wrapper scores">
+        <view class="center-cell">
+            <view>0</view>
+            <text>我的积分</text>
+        </view>
+        <view class="center-cell">
+            <view>0</view>
+            <text>我的认养</text>
+        </view>
+        <view class="center-cell">
+            <view>0</view>
+            <text>我的现金</text>
+        </view>
+    </view>
+    <van-row custom-class="wrapper orders">
+        我的订单
+        <van-row>
+            <van-col span="6">
+                <van-icon name="orders-o" size="25px" />
+            </van-col>
+            <van-col span="6">
+                <van-icon name="pending-payment" size="25px" />
+            </van-col>
+            <van-col span="6">
+                <van-icon name="tosend" size="25px" />
+            </van-col>
+            <van-col span="6">
+                <van-icon name="logistics" size="25px" />
+            </van-col>
+        </van-row>
+        <van-row>
+            <van-col span="6">全部订单</van-col>
+            <van-col span="6">代付款</van-col>
+            <van-col span="6">待配送</van-col>
+            <van-col span="6">待收货</van-col>
+        </van-row>
+    </van-row>
+    <van-row custom-class="wrapper common-func">
+        常用功能
+        <van-grid column-num="2">
+            <van-grid-item icon="apps-o" text="租地管理" />
+            <van-grid-item icon="like-o" text="认养" />
+            <van-grid-item icon="refund-o" text="积分商城" />
+            <van-grid-item icon="coupon-o" text="优惠券" />
+        </van-grid>
+    </van-row>
+    <van-row custom-class="wrapper more-tools">
+        更多工具
+        <van-grid border="{{false}}">
+            <van-grid-item icon="question" text="常见问题" />
+            <van-grid-item icon="setting" text="设置" />
+            <van-grid-item icon="map-marked" text="收获地址" />
+            <van-grid-item icon="shopping-cart" text="购物车" />
+        </van-grid>
+    </van-row>
+</scroll-view>
