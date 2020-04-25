@@ -1,0 +1,94 @@
+<van-tabs sticky active="{{active}}" color="#07c160" bind:click="onClick">
+    <van-tab title="农场A">
+        <view class="panel-container">
+            <van-panel wx:for="{{landDetail}}" wx:key="id" title="{{item.title}}" desc="{{item.desc}}" status="{{status[index]}}" use-footer-slot>
+                <view slot="footer" class="footer">
+                    <van-button disabled="{{item.isAppointed}}" size="small" class="footer-btn" bind:click="appointment" data-landDetail="{{item}}">
+                        <van-icon wx:if="{{item.isAppointed}}" name="success" size="25px" />
+                        <view wx:else>预约</view>
+                    </van-button>
+                    <van-button size="small" color="linear-gradient(to right, #11998e, #38ef7d)">
+                        选择土地
+                    </van-button>
+                </view>
+            </van-panel>
+            <!-- <video src="http://open.live.cqkundian.com/kd/kd003.m3u8" autoplay="{{true}}" /> -->
+        </view>
+    </van-tab>
+    <van-tab title="农场B">
+        <view class="panel-container">
+            <van-panel wx:for="{{landDetail}}" wx:key="id" title="{{item.title}}" desc="{{item.desc}}" status="{{status[index]}}" use-footer-slot>
+                <view slot="footer" class="footer">
+                    <van-button size="small" class="footer-btn" bind:tap="appointment">
+                        预约
+                    </van-button>
+                    <van-button size="small" color="linear-gradient(to right, #11998e, #38ef7d)">
+                        选择土地
+                    </van-button>
+                </view>
+            </van-panel>
+            <!-- <video src="http://open.live.cqkundian.com/kd/kd003.m3u8" autoplay="{{true}}" /> -->
+        </view>
+    </van-tab>
+    <van-tab title="农场C">
+        <view class="panel-container">
+            <van-panel wx:for="{{landDetail}}" wx:key="id" title="{{item.title}}" desc="{{item.desc}}" status="{{status[index]}}" use-footer-slot>
+                <view slot="footer" class="footer">
+                    <van-button size="small" class="footer-btn" bind:tap="appointment">
+                        预约
+                    </van-button>
+                    <van-button size="small" color="linear-gradient(to right, #11998e, #38ef7d)">
+                        选择土地
+                    </van-button>
+                </view>
+            </van-panel>
+            <!-- <video src="http://open.live.cqkundian.com/kd/kd003.m3u8" autoplay="{{true}}" /> -->
+        </view>
+    </van-tab>
+    <van-tab title="农场D">
+        <view class="panel-container">
+            <van-panel wx:for="{{landDetail}}" wx:key="id" title="{{item.title}}" desc="{{item.desc}}" status="{{status[index]}}" use-footer-slot>
+                <view slot="footer" class="footer">
+                    <van-button size="small" class="footer-btn" bind:tap="appointment">
+                        预约
+                    </van-button>
+                    <van-button size="small" color="linear-gradient(to right, #11998e, #38ef7d)">
+                        选择土地
+                    </van-button>
+                </view>
+            </van-panel>
+            <!-- <video src="http://open.live.cqkundian.com/kd/kd003.m3u8" autoplay="{{true}}" /> -->
+        </view>
+    </van-tab>
+    <van-tab title="农场E">
+        <view class="panel-container">
+            <van-panel wx:for="{{landDetail}}" wx:key="id" title="{{item.title}}" desc="{{item.desc}}" status="{{status[index]}}" use-footer-slot>
+                <view slot="footer" class="footer">
+                    <van-button size="small" class="footer-btn" bind:tap="appointment">
+                        预约
+                    </van-button>
+                    <van-button size="small" color="linear-gradient(to right, #11998e, #38ef7d)">
+                        选择土地
+                    </van-button>
+                </view>
+            </van-panel>
+            <!-- <video src="http://open.live.cqkundian.com/kd/kd003.m3u8" autoplay="{{true}}" /> -->
+        </view>
+    </van-tab>
+    <van-tab title="农场F">
+        <view class="panel-container">
+            <van-panel wx:for="{{landDetail}}" wx:key="id" title="{{item.title}}" desc="{{item.desc}}" status="{{status[index]}}" use-footer-slot>
+                <view slot="footer" class="footer">
+                    <van-button size="small" class="footer-btn" bind:tap="appointment">
+                        预约
+                    </van-button>
+                    <van-button size="small" color="linear-gradient(to right, #11998e, #38ef7d)">
+                        选择土地
+                    </van-button>
+                </view>
+            </van-panel>
+            <!-- <video src="http://open.live.cqkundian.com/kd/kd003.m3u8" autoplay="{{true}}" /> -->
+        </view>
+    </van-tab>
+</van-tabs>
+<van-toast id="van-toast" />

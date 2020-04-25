@@ -9,21 +9,22 @@
         "pagePath": "pages/index/index"
       },
       {
-        "pagePath": "pages/land/land"
+        "pagePath": "pages/land/index"
       },
       {
-        "pagePath": "pages/adopt/adopt"
+        "pagePath": "pages/adopt/index"
       },
       {
-        "pagePath": "pages/user/user"
+        "pagePath": "pages/user/index"
       }
     ]
   },
   "pages": [
     "pages/index/index",
-    "pages/adopt/adopt",
-    "pages/land/land",
-    "pages/user/user"
+    "pages/adopt/index",
+    "pages/adopt/adopt-detail",
+    "pages/land/index",
+    "pages/user/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

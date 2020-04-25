@@ -1,0 +1,14 @@
+<view class="adopt-container">
+    <scroll-view class="category-container" scroll-with-animation="{{true}}" scroll-y="{{true}}">
+        <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+            <van-sidebar-item custom-class="sidebar" title="{{item}}" wx:for="{{categories}}" wx:key="id" />
+        </van-sidebar>
+    </scroll-view>
+    <scroll-view class="animal-container" scroll-with-animation="{{true}}" scroll-y="{{true}}">
+        <view wx:if="{{!currentAnimals.length}}" class="no-data">
+            <van-image width="10rem" height="10rem" src="/static/empty.png" />
+        </view>
+        <van-card bind:tap="toDetail" lazy-load="{{true}}" wx:for="{{currentAnimals}}" data-id="{{item._id}}" wx:key="id" num="{{item.num}}" tag="{{item.tag}}" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.thumb}}"></van-card>
+        <van-divider contentPosition="center" wx:if="{{currentAnimals.length}}">没有了</van-divider>
+    </scroll-view>
+</view>

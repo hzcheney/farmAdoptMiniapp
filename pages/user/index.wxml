@@ -1,0 +1,82 @@
+<scroll-view style="background-color:#ebedf0; height:1400rpx;" scroll-y="true" scroll-with-animation="true">
+    <view class="settings">
+        <view class="cell-wrapper">
+            <view wx:if="{{userInfo}}">
+                <view class="order-cell">
+                    <van-image round width="60px" height="60px" src="{{userInfo.avatarUrl}}" />
+                </view>
+                <view class="cell-left">
+                    <view>{{userInfo.nickName}}</view>
+                    <text>普通会员</text>
+                </view>
+            </view>
+            <view wx:else class="btn">
+                <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="mini" type="default">
+                    请登录
+                </button>
+            </view>
+            <view class="order-cell">
+                <van-icon name="setting-o" size="25px" />
+            </view>
+        </view>
+    </view>
+    <view class="wrapper scores">
+        <view class="center-cell">
+            <view>0</view>
+            <text>我的积分</text>
+        </view>
+        <view class="center-cell">
+            <view>0</view>
+            <text>我的认养</text>
+        </view>
+        <view class="center-cell">
+            <view>0</view>
+            <text>我的现金</text>
+        </view>
+    </view>
+    <view class="wrapper">
+        <view class="order-title">
+            <text>我的订单</text>
+        </view>
+        <view class="orders">
+            <view class="order-cell">
+                <van-icon name="orders-o" size="25px" />
+                <view>全部订单</view>
+            </view>
+            <view class="order-cell">
+                <van-icon name="pending-payment" size="25px" />
+                <view>代付款</view>
+            </view>
+            <view class="order-cell">
+                <van-icon name="tosend" size="25px" />
+                <view>待配送</view>
+            </view>
+            <view class="order-cell">
+                <van-icon name="logistics" size="25px" />
+                <view>待收货</view>
+            </view>
+        </view>
+    </view>
+    <view class="wrapper common-func">
+        <view class="order-title">
+            <text>常用功能</text>
+        </view>
+        <van-grid column-num="2">
+            <van-grid-item icon="apps-o" text="租地管理" />
+            <van-grid-item icon="like-o" text="认养" />
+            <van-grid-item icon="refund-o" text="积分商城" />
+            <van-grid-item icon="coupon-o" text="优惠券" />
+        </van-grid>
+    </view>
+    <view class="wrapper more-tools">
+        <view class="order-title">
+            <text>更多工具</text>
+        </view>
+        <van-grid border="{{false}}">
+            <van-grid-item icon="question" text="常见问题" />
+            <van-grid-item icon="setting" text="设置" />
+            <van-grid-item icon="map-marked" text="收获地址" />
+            <van-grid-item icon="shopping-cart" text="购物车" />
+        </van-grid>
+    </view>
+</scroll-view>

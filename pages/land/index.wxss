@@ -1,0 +1,14 @@
+.panel-container {
+  height: 100%;
+  margin: 10px 0;
+}
+.footer {
+  text-align: right;
+}
+.content {
+  padding: 20px;
+  font-size: 16px;
+}
+.footer-btn {
+  margin-right: 12px;
+}

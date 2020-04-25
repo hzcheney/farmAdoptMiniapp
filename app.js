@@ -2,6 +2,10 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
+    wx.cloud.init({
+      env: "adopt-farm-9gc9w",
+      traceUser: true,
+    });
     // var logs = wx.getStorageSync('logs') || []
     // logs.unshift(Date.now())
     // wx.setStorageSync('logs', logs)
@@ -34,6 +38,6 @@ App({
     // })
   },
   globalData: {
-    userInfo: null
-  }
-})
+    userInfo: null,
+  },
+});

@@ -1,0 +1,27 @@
+<view>
+    <view>
+        <van-image height="414" width="100%" src="{{ animal.thumb }}" />
+    </view>
+    <van-cell-group border="{{ false }}">
+        <van-cell custom-class="goods-message" title="{{ animal.title }}" label="{{ goods.formatPrice }}" />
+        <van-cell custom-class="goods-express" border="{{ false }}">
+            <van-col span="10">生长周期：{{ animal.lifeSpan   }}个月</van-col>
+            <van-col span="14">剩余：{{ animal.num }}</van-col>
+        </van-cell>
+    </van-cell-group>
+    <van-cell-group custom-class="goods-cell-group">
+        <van-cell value="进入店铺" icon="shop-o" is-link bind:click="sorry">
+            <view slot="title">
+                <span class="van-cell-text">在线认养</span>
+                <van-tag class="goods-tag" type="danger">官方</van-tag>
+            </view>
+        </van-cell>
+        <van-cell title="线下门店" icon="location-o" is-link bind:click="sorry" />
+    </van-cell-group>
+    <van-goods-action>
+        <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+        <van-goods-action-icon icon="shop-o" text="店铺" />
+        <van-goods-action-button color="#be99ff" text="加入购物车" type="warning" />
+        <van-goods-action-button color="#7232dd" text="立即认养" />
+    </van-goods-action>
+</view>

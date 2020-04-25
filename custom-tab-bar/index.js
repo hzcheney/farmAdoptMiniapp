@@ -10,17 +10,17 @@ Component({
       {
         icon: "apps-o",
         text: "租地",
-        url: "/pages/land/land",
+        url: "/pages/land/index",
       },
       {
         icon: "orders-o",
         text: "认养",
-        url: "/pages/adopt/adopt",
+        url: "/pages/adopt/index",
       },
       {
         icon: "user-o",
         text: "我的",
-        url: "/pages/user/user",
+        url: "/pages/user/index",
       },
     ],
   },
